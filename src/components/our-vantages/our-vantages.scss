@@ -1,0 +1,92 @@
+.our-vantages {
+  margin-top: -125px;
+
+  @media(max-width: 375px) {
+    margin-top: 0;
+    padding: 50px 0;
+  }
+
+  &__title {
+    margin-bottom: 112px;
+
+    @media(max-width: 1199px) {
+      margin-bottom: 75px;
+    }
+    @media(max-width: 991px) {
+      margin-bottom: 50px;
+    }
+    @media(max-width: 575px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    margin-bottom: 40px;
+
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 35px;
+
+      @media(max-width: 375px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &-img {
+      margin-bottom: 42px;
+
+      @media(max-width: 991px) {
+        margin-bottom: 10px;
+      }
+
+      @media(max-width: 375px) {
+        margin-bottom: 0;
+        padding: 20px;
+      }
+    }
+
+    &-info {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.6;
+
+      @media(max-width: 767px) {
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 500;
+      }
+    }
+
+    &-description {
+      font-size: 14px;
+      line-height: 1.7;
+      text-align: center;
+      margin-bottom: 29px;
+
+      @media(max-width: 375px) {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      &_more {
+        font-style: italic;
+        font-size: 16px;
+      }
+    }
+
+    &-button {
+      width: 100%;
+      border: 1px solid #0d10c5;
+      padding: 21px 50px 23px;
+      max-width: 370px;
+      margin: 24px auto 45px;
+
+      @media(max-width: 1199px) {
+        padding: 15px 50px 17px;
+      }
+    }
+  }
+}

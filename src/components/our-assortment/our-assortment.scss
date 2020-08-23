@@ -1,0 +1,42 @@
+.our-assortment {
+  margin-top: -281px;
+  padding: 388px 0 51px;
+  min-height: 1500px;
+  background-image: url(../images/our-assortment.png);
+  background-repeat: no-repeat;
+  background-position: 245px -3px;
+
+  @media(max-width: 991px) {
+    background-image: none;
+    margin-top: 0;
+    padding: 50px 0;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto 44px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    @media(max-width: 991px) {
+      margin-bottom: 20px;
+    }
+
+    &-img {
+      box-shadow: 0 6px 17px 1px rgba(184, 184, 184, 0.31);
+      margin-bottom: 27px;
+
+      @media(max-width: 375px) {
+        margin-bottom: 0;
+        padding: 20px;
+        box-shadow: none;
+      }
+    }
+  }
+}
