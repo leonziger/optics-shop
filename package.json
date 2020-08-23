@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "author": "Leonid Zichkov",
   "private": true,
-  "homepage": "https://leonziger.github.io/chudozir-oftalmolog",
+  "homepage": "https://leonziger.github.io/optics-shop",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leonziger/chudozir-oftalmolog.git"
+    "url": "git+https://github.com/leonziger/optics-shop.git"
   },
   "bugs": {
-    "url": "https://github.com/leonziger/chudozir-oftalmolog/issues"
+    "url": "https://github.com/leonziger/optics-shop/issues"
   },
   "scripts": {
     "start": "gulp",

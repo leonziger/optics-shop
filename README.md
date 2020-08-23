@@ -1,4 +1,4 @@
-# Chudozir oftalmolog
+# Optics shop
 
 ### Install dependencies
 

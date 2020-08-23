@@ -1,0 +1,41 @@
+.action {
+  min-height: 899px;
+  background-image: url(../images/action_bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 107px 0 50px;
+  outline: 1px solid red;
+
+  @media(max-width: 991px) {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    min-height: 800px;
+  }
+
+  &__intro {
+    color: #fff;
+    margin-top: 56px;
+
+    @media(max-width: 991px) {
+      display: none;
+    }
+
+    &-title {
+      font-size: 48px;
+      max-width: 470px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    &-subtitle {
+      max-width: 400px;
+      font-size: 22px;
+      line-height: 1.45;
+      
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
