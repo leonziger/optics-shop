@@ -1,0 +1,233 @@
+.clients-feedback {
+  padding: 137px 0;
+  background-image: url(../images/clients-feedback_bg.png);
+  background-repeat: no-repeat;
+  background-position: 1425px 0;
+  margin-top: -54px;
+
+  @media(max-width: 1365px) {
+    background: none;
+  }
+
+  @media(max-width: 1199px) {
+    margin-top: 0;
+    padding: 50px 0;
+  }
+
+  &__title {
+    margin-bottom: 66px;
+  }
+}
+
+.carousel {
+
+  &__item {
+    display: block!important;
+    margin: 0 auto;
+    max-width: 970px;
+    box-shadow: 0 6px 17px 1px rgba(201, 201, 201, 0.31);
+    background-color: #fff;
+    padding: 61px 0 75px;
+    position: relative;
+
+    @media(max-width: 1199px) {
+      padding: 20px 0 0;
+    }
+
+    &-left {
+      flex-shrink: 0;
+    }
+
+    &-img {
+      width: 213px;
+      height: 213px;
+      border-radius: 50%;
+      box-shadow: 0 6px 17px 1px rgba(109, 109, 109, 0.58);
+
+      @media(max-width: 1199px) {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+      }
+    }
+
+    &-sphere {
+      position: absolute;
+      right: -172px;
+      top: -88px;
+      display: none!important;
+    }
+
+    &-content {
+      margin-left: -45px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 5;
+
+      @media(max-width: 1199px) {
+        margin-left: 0;
+        display: block;
+      }
+
+      &:before {
+        content:'«';
+        position: absolute;
+        left: 140px;
+        top: -155px;
+        text-shadow: 0 6px 17px rgba(201, 201, 201, 0.31);
+        color: #fff;
+        font-weight: 900;
+        font-size: 260px;
+        z-index: -1;
+
+        @media(max-width: 1199px) {
+          display: none;
+        }
+      }
+
+      &:after {
+        content:'»';
+        position: absolute;
+        right: 35px;
+        bottom: -10px;
+        text-shadow: 0 6px 17px rgba(201, 201, 201, 0.31);
+        color: #fff;
+        font-weight: 900;
+        font-size: 260px;
+        z-index: -1;
+
+        @media(max-width: 1199px) {
+          display: none;
+        }
+      }
+    }
+
+    &-right {
+      font-size: 16px;
+      line-height: 1.625;
+      padding: 26px 70px 0 33px;
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: -33px;
+        display: block;
+      }
+
+      @media(max-width: 1199px) {
+        padding: 30px;
+        margin-left: 0;
+        line-height: 1.2;
+
+        p {
+          margin-bottom: 10px;
+        }
+        span {
+          margin-bottom: -25px;
+        }
+      }
+    }
+  }
+
+
+  .slick-prev {
+    left: 35.2%;
+    right: unset;
+  }
+  .slick-next {
+    right: 35%;
+    left: unset;
+  }
+
+  @media(max-width: 991px) {
+    .slick-prev,
+    .slick-next {
+      bottom: -90px;
+    }
+  }
+
+  @media(max-width: 767px) {
+    .slick-prev {
+      left: -5px;
+      bottom: unset;
+      top: 50%;
+      z-index: 10;
+    }
+
+    .slick-next {
+      right: -5px;
+      bottom: unset;
+      top: 50%;
+      z-index: 10;
+    }
+  }
+
+  @media(max-width: 575px) {
+    .slick-prev {
+      width: 50px;
+      height: 50px;
+      background-size: contain !important;
+    }
+    .slick-next {
+      width: 50px;
+      height: 50px;
+      background-size: contain !important;
+    }
+  }
+
+  .slick-dots {
+    bottom: -92px;
+    left: 50.7%;
+    transform: translateX(-50%);
+
+    @media(max-width: 991px) {
+      display: none;
+    }
+
+    li {
+      margin: 0 1px;
+
+      button {
+        border: 1px solid transparent;
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+
+        &:before {
+          top: -2px;
+          left: 1px;
+          width: 10px;
+          height: 10px;
+          color: #cecece;
+          opacity: 1;
+          font-size: 9px;
+        }
+      }
+
+      &:hover {
+        button {
+          border: 1px solid #1271bb;
+
+          &:before {
+            color: #1271bb;
+          }
+        }
+      }
+    }
+
+    li.slick-active {
+      button {
+        border: 1px solid #1271bb;
+
+        &:before {
+          color: #1271bb;
+        }
+      }
+    }
+  }
+}

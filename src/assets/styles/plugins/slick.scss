@@ -1,0 +1,62 @@
+@import '../../../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+.slick-dots {
+  width: auto;
+}
+
+.slick-vertical .slick-slide {
+  border: 0;
+}
+
+
+/* -------- Start: Standard font and loader redefined ---------  */
+
+@font-face
+{
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('./../fonts/slick.eot');
+  src: url('./../fonts/slick.eot?#iefix') format('embedded-opentype'), url('./../fonts/slick.woff') format('woff'), url('./../fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+
+.slick-prev,
+.slick-next {
+  &:before {
+    content: '';
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.slick-prev {
+  width: 59px;
+  height: 59px;
+  background: url(../images/prev.png) no-repeat center !important;
+  right: 87px;
+  top: unset;
+  bottom: -138px;
+  left: unset;
+}
+
+.slick-next {
+  width: 59px;
+  height: 59px;
+  background: url(../images/next.png) no-repeat center !important;
+  right: -1px;
+  top: unset;
+  bottom: -138px;
+  left: unset;
+}
+
+.slick-list {
+  .slick-loading & {
+    background: #fff slick-image-url("./../images/ajax-loader.gif") center no-repeat;
+  }
+}
+
+/* -------- End: Standard font and loader redefined ---------  */
