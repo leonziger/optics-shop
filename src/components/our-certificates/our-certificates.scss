@@ -1,0 +1,149 @@
+.our-certificates {
+  padding: 4px 0;
+
+  &__title {
+    margin-bottom: 81px;
+
+    @media(max-width: 767px) {
+      margin-bottom: 50px;
+    }
+    @media(max-width: 575px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+
+    &-title {
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &-img {
+      margin-bottom: 39px;
+    }
+  }
+}
+
+.carousel2 {
+
+  &__item {
+    max-width: 100%;
+
+    img {
+      @media(max-width: 767px) {
+        margin: 0 auto 30px;
+        padding: 10px;
+      }
+      @media(max-width: 575px) {
+        max-width: 300px;
+      }
+      @media(max-width: 399px) {
+        max-width: 250px;
+      }
+
+    }
+  }
+
+  .slick-prev {
+    left: 35.6%;
+    right: unset;
+    bottom: -104px;
+  }
+
+  .slick-next {
+    right: 35.4%;
+    left: unset;
+    bottom: -104px;
+  }
+
+  @media(max-width: 991px) {
+    .slick-prev,
+    .slick-next {
+      bottom: -90px;
+    }
+  }
+
+  @media(max-width: 767px) {
+    .slick-prev {
+      left: -5px;
+      bottom: unset;
+      top: 50%;
+      z-index: 10;
+    }
+
+    .slick-next {
+      right: -5px;
+      bottom: unset;
+      top: 50%;
+      z-index: 10;
+    }
+  }
+
+  @media(max-width: 575px) {
+    .slick-prev {
+      left: 5px;
+      width: 50px;
+      height: 50px;
+      background-size: contain !important;
+    }
+    .slick-next {
+      right: 5px;
+      width: 50px;
+      height: 50px;
+      background-size: contain !important;
+    }
+  }
+
+  .slick-dots {
+    bottom: -58px;
+    left: 50.7%;
+    transform: translateX(-50%);
+
+    @media(max-width: 991px) {
+      display: none!important;
+    }
+
+    li {
+      margin: 0 1px;
+
+      button {
+        border: 1px solid transparent;
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+
+        &:before {
+          top: -2px;
+          left: 1px;
+          width: 10px;
+          height: 10px;
+          color: #cecece;
+          opacity: 1;
+          font-size: 9px;
+        }
+      }
+
+      &:hover {
+        button {
+          border: 1px solid #1271bb;
+
+          &:before {
+            color: #1271bb;
+          }
+        }
+      }
+    }
+
+    li.slick-active {
+      button {
+        border: 1px solid #1271bb;
+
+        &:before {
+          color: #1271bb;
+        }
+      }
+    }
+  }
+}

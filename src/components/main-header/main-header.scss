@@ -98,6 +98,14 @@
     }
   }
 
+  &__nav {
+    display: none;
+
+    @media(max-width: 767px) {
+      display: block;
+    }
+  }
+
   &__menu-toggle {
     display: none;
     align-self: center;
@@ -105,6 +113,17 @@
     @media(max-width: 767px) {
       display: block;
       margin-right: 3px;
+    }
+  }
+
+  &_sticky {
+    @media(max-width: 767px) {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 999;
+      background-color: #f1f6fa;
     }
   }
 }
@@ -125,4 +144,88 @@
   border-radius: 0 0 0 50px;
   width: 1059px;
   height: 137px;
+}
+
+.main-menu {
+
+  @media (max-width: 767px) {
+    position: fixed;
+    top: -9999px;
+    left: -9999px;
+    right: 9999px;
+    bottom: 9999px;
+    background-color: #1372bc;
+    opacity: 0;
+    margin: 0;
+    z-index: 200;
+    border: none;
+    min-width: 160px;
+    width: 50%;
+    text-align: center;
+    border-radius: 0;
+    transition: all 0s ease .35s, opacity .35s ease;
+
+    #nav {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      top: 5%;
+      right: 0;
+      bottom: 10%;
+      transform: translateX(-50%);
+      width: 100%;
+
+      & > ul {
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        & > li {
+          padding: 0 20px;
+
+          &>a {
+            display: block;
+            padding: 15px 10px;
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover,
+            &:active {
+              color: white;
+              text-decoration: none;
+              border-bottom: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+
+    &.open {
+      left: unset;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0.9;
+      max-width: 384px;
+      min-width: 250px;
+      transition: opacity .35s ease;
+      overflow-y: scroll;
+      z-index: 2;
+    }
+  }
+
+  @media(max-width: 640px) {
+    #nav {
+      & > ul {
+        & > li {
+          font-size: 16px;
+          line-height: 1;
+        }
+      }
+    }
+  }
 }

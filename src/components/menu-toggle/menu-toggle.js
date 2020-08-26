@@ -1,7 +1,12 @@
 import $ from 'jquery';
 
+const menuToggle = $('.main-header__menu-toggle');
 
-$('.main-header__menu-toggle').click(function() {
-  $('.menu-toggle').toggleClass('menu-toggle_active');
-  $('.main-header__nav').toggleClass('is-open');
-});
+if (menuToggle.length > 0) {
+    menuToggle.click(function() {
+        const burgerLeft = menuToggle.children('.menu-toggle');
+        burgerLeft.toggleClass('menu-toggle_active');
+        $('.main-menu').toggleClass('open');
+        $('body').toggleClass('menu-open');
+    });
+}

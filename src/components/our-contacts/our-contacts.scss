@@ -1,0 +1,129 @@
+.our-contacts {
+  padding: 160px 0 33px;
+
+  @media(max-width: 991px) {
+    padding: 100px 0 50px;
+  }
+  @media(max-width: 767px) {
+    padding: 0  0 50px;
+  }
+
+  &__title {
+    text-align: left;
+
+    @media(max-width: 1199px) {
+      text-align: center;
+    }
+    @media (max-width: 575px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__right {
+    margin: 14px 0;
+
+    @media(max-width: 1199px) {
+      margin-bottom: 50px;
+    }
+
+    &-images {
+      display: flex;
+      justify-content: space-between;
+
+      @media(max-width: 575px) {
+        flex-direction: column;
+      }
+    }
+
+    &-top,
+    &-bottom {
+      @media(max-width: 1199px) {
+        width: 46%;
+      }
+
+      @media(max-width: 575px) {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+  }
+
+  &__row {
+    @media(max-width: 1199px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__cities {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__city {
+    font-size: 16px;
+    margin-bottom: 26px;
+
+    @media(max-width: 1199px) {
+      width: 30%;
+    }
+    @media(max-width: 767px) {
+      width: 45%;
+    }
+    @media(max-width: 575px) {
+      width: 100%;
+    }
+
+    &-title {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    &-link {
+      display: block;
+      margin-bottom: 10px;
+    }
+    &-info {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__questions {
+    margin-top: -4px;
+    font-size: 16px;
+
+    @media (max-width: 767px)  {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    &-info {
+      margin-bottom: 10px;
+      line-height: 1.625;
+      max-width: 230px;
+
+      @media (max-width: 767px)  {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__button {
+    margin: 24px 0 28px;
+    padding: 22px 78px 23px;
+
+    @media (max-width: 767px)  {
+      margin: 24px auto 28px;
+      display: block;
+      padding: 15px 50px 17px;
+    }
+  }
+
+  &__map {
+    margin-top: 22px;
+  }
+}
